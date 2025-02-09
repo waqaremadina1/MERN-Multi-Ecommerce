@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+
+@import "tailwindcss";
+
+a.active hr{
+    display: block;
+}
+
+*{
+    font-family: Outfit;
+}
+
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @media (max-width:640px) {
+    a.active{
+        background-color: black;
+        color: white;
+    }
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+  /* Start Footer */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between; /* Space between icons & text */
+    align-items: center;
+    padding: 15px 0;
+  }
+  
+  /* Social Media Icons */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+  }
+  
+  /* Copyright Text */
+  .copyright-text {
+    font-size: 14px;
+    color: gray;
+    margin-left: 20px; /* Space from icons */
+  }
+  
+  /* Mobile Responsive Fix */
+  @media (max-width: 640px) {
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px; /* Space between icons & text */
+    }
+  
+    .social-icons {
+      justify-content: center;
+      margin-bottom: 5px;
+    }
+  
+    .copyright-text {
+      margin-left: 0; /* Remove extra spacing in mobile */
+    }
+  }
+  
+
+  
+  /* End Footer */
